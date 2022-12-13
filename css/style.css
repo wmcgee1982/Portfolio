@@ -9,13 +9,16 @@ body {
 }
 
 h1 {
-  font-size: 30px;
+  font-size: 40px;
 }
 
 h2 {
-  font-size: 25px;
+  font-size: 35px;
 }
 
+h3 {
+  font-size: 25px;
+}
 
 header {
   padding: 20px;
@@ -34,7 +37,7 @@ header h1 {
 header nav {
   float: right;
   font-family: 'Helvetica', 'Arial', 'sans-serif';
-  font-size: 20px;
+  font-size: 25px;
   margin-right: 10px;
 }
 
@@ -52,7 +55,7 @@ a {
   text-decoration: none;
 }
 section {
-  background-color: #e6e7e9;
+  background-color: #ffffff;
   color: #000000;
 }
 
@@ -91,7 +94,7 @@ section {
   min-height: 800px;
   gap: 0.5em;
   padding: 20px;
-  background-color: #e6e7e9;
+  background-color: #ffffff;
   
   display: grid;
   grid-template-columns: 50% 50%;
@@ -107,6 +110,16 @@ section {
   background-image: url("../images/02-portfolio-1.jpg");
   background-size: cover;
   background-position: center;
+  border: 10px solid  #e6e7e9;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+#appCaption {
+  padding: 10px;
+  color: rgb(0, 0, 0);
+  background-color:  #e6e7e9;
 }
 
 .secondApp {
@@ -114,6 +127,10 @@ section {
   background-image: url("../images/02-portfolio-2.jpg");
   background-size: cover;
   background-position: center;
+  border: 10px solid  #e6e7e9;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
 }
 
 .thirdApp {
@@ -121,6 +138,10 @@ section {
   background-image: url("../images/02-portfolio-3.jpg");
   background-size: cover;
   background-position: center;
+  border: 10px solid  #e6e7e9;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
 }
 
 .fourthApp {
@@ -128,6 +149,10 @@ section {
   background-image: url("../images/02-portfolio-4.jpg");
   background-size: cover;
   background-position: center;
+  border: 10px solid  #e6e7e9;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
 }
 
 .fifthApp {
@@ -135,9 +160,12 @@ section {
   background-image: url("../images/02-run-buddy.jpg");
   background-size: cover;
   background-position: center;
+  border: 10px solid  #e6e7e9;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
 }
 
-h3,
 h4,
 h5,
 h6 {
