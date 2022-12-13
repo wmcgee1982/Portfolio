@@ -9,15 +9,15 @@ body {
 }
 
 h1 {
-  font-size: 40px;
+  font-size: 30px;
 }
 
 h2 {
-  font-size: 35px;
+  font-size: 25px;
 }
 
 h3 {
-  font-size: 25px;
+  font-size: 20px;
 }
 
 header {
@@ -37,8 +37,9 @@ header h1 {
 header nav {
   float: right;
   font-family: 'Helvetica', 'Arial', 'sans-serif';
-  font-size: 25px;
+  font-size: 20px;
   margin-right: 10px;
+  line-height: 1.5;
 }
 
 header nav ul {
@@ -48,14 +49,20 @@ header nav ul {
 header nav ul li {
   display: inline-block;
   margin-left: 25px;
+  border-bottom: 3px solid black;
+}
+
+header nav ul li a:hover {
+  border-bottom: 5px solid black;
 }
 
 a {
   color: #000000;
   text-decoration: none;
 }
+
 section {
-  background-color: #ffffff;
+  background-color: #e6e7e9;
   color: #000000;
 }
 
@@ -79,6 +86,7 @@ section {
 .containerGrid {
   display: grid;
   grid-template-columns: 25% 75%;
+  background-color: #e6e7e9;
 }
 
 .containerGrid section {
@@ -89,12 +97,16 @@ section {
   float: right;
 }
 
+.page-section {
+  border-right: 3px solid black;
+  margin: 20px;
+}
+
 .workGrid {
-  margin: 0px;
   min-height: 800px;
   gap: 0.5em;
+  margin-bottom: 20px;
   padding: 20px;
-  background-color: #ffffff;
   
   display: grid;
   grid-template-columns: 50% 50%;
@@ -110,16 +122,16 @@ section {
   background-image: url("../images/02-portfolio-1.jpg");
   background-size: cover;
   background-position: center;
-  border: 10px solid  #e6e7e9;
+  border: 5px solid  #ffffff;
   display: flex;
   align-items: center;
   justify-content: flex-start;
 }
 
 #appCaption {
-  padding: 10px;
+  padding: 5px;
   color: rgb(0, 0, 0);
-  background-color:  #e6e7e9;
+  background-color:  #ffffff;
 }
 
 .secondApp {
@@ -127,7 +139,7 @@ section {
   background-image: url("../images/02-portfolio-2.jpg");
   background-size: cover;
   background-position: center;
-  border: 10px solid  #e6e7e9;
+  border: 5px solid  #ffffff;
   display: flex;
   align-items: center;
   justify-content: flex-start;
@@ -138,7 +150,7 @@ section {
   background-image: url("../images/02-portfolio-3.jpg");
   background-size: cover;
   background-position: center;
-  border: 10px solid  #e6e7e9;
+  border: 5px solid  #ffffff;
   display: flex;
   align-items: center;
   justify-content: flex-start;
@@ -149,7 +161,7 @@ section {
   background-image: url("../images/02-portfolio-4.jpg");
   background-size: cover;
   background-position: center;
-  border: 10px solid  #e6e7e9;
+  border: 5px solid  #ffffff;
   display: flex;
   align-items: center;
   justify-content: flex-start;
@@ -160,7 +172,7 @@ section {
   background-image: url("../images/02-run-buddy.jpg");
   background-size: cover;
   background-position: center;
-  border: 10px solid  #e6e7e9;
+  border: 5px solid  #ffffff;
   display: flex;
   align-items: center;
   justify-content: flex-start;
