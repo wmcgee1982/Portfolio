@@ -52,7 +52,7 @@ a {
   text-decoration: none;
 }
 section {
-  background-color: #e9e1e1;
+  background-color: #e6e7e9;
   color: #000000;
 }
 
@@ -69,61 +69,72 @@ section {
 }
 
 .hero-banner h2 {
-  background-color: #e9e1e1;
+  background-color: #e6e7e9;
   padding: 5px 15px 5px 200px;
 }
 
-.container {
+.containerGrid {
   display: grid;
   grid-template-columns: 25% 75%;
-  grid-template-rows: 150x 500px 100px;
-  grid-area: 
-  aboutTitle aboutContent
-  workTitle workContent
-  contactTitle contactContent;
 }
 
-.container section {
+.containerGrid section {
   padding: 20px;
 }
 
-.container h2 {
+.containerGrid h2 {
   float: right;
 }
 
-.work-container {
+.workGrid {
+  margin: 0px;
+  min-height: 800px;
+  gap: 0.5em;
+  padding: 20px;
+  background-color: #e6e7e9;
+  
   display: grid;
   grid-template-columns: 50% 50%;
-  grid-template-rows: 100px 100px 100px;
-  grid-area: 
-  mApp mApp
-  sApp tApp
-  foApp fiApp;
+  grid-template-rows: 50% 25% 25%;
+  grid-template-areas: 
+  "mA mA"
+  "sA tA"
+  "fA fiA";
 }
 
-#mainApp {
-  grid-area: mApp;
+.mainApp {
+  grid-area: mA;
   background-image: url("../images/02-portfolio-1.jpg");
+  background-size: cover;
+  background-position: center;
 }
 
-#secondApp {
-  grid-area: sApp;
+.secondApp {
+  grid-area: sA;
   background-image: url("../images/02-portfolio-2.jpg");
+  background-size: cover;
+  background-position: center;
 }
 
-#thirdApp {
-  grid-area: tApp;
+.thirdApp {
+  grid-area: tA;
   background-image: url("../images/02-portfolio-3.jpg");
+  background-size: cover;
+  background-position: center;
 }
 
-#fourthApp {
-  grid-area: foApp;
+.fourthApp {
+  grid-area: fA;
   background-image: url("../images/02-portfolio-4.jpg");
+  background-size: cover;
+  background-position: center;
 }
 
-#fifthApp {
-  grid-area: fiApp;
+.fifthApp {
+  grid-area: fiA;
   background-image: url("../images/02-run-buddy.jpg");
+  background-size: cover;
+  background-position: center;
 }
 
 h3,
