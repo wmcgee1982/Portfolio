@@ -6,6 +6,7 @@ body {
   margin: auto;
   font-family: 'Helvetica', 'Arial', 'sans-serif';
   line-height: 1.5;
+  color: white;
 }
 
 h1 {
@@ -24,8 +25,8 @@ h4 {
   font-size: 18px;
 }
 
-p {
-  font-size: 15px;
+p br {
+  font-size: 20px;
   margin: auto;
 }
 
@@ -52,6 +53,10 @@ header nav {
   line-height: 1.5;
 }
 
+header nav a {
+  color: black;
+}
+
 header nav ul {
   list-style-type: none;
 }
@@ -67,7 +72,7 @@ header nav ul li a:hover {
 }
 
 a {
-  color: #000000;
+  color: white;
   text-decoration: none;
 }
 
@@ -76,8 +81,7 @@ a:hover {
 }
 
 section {
-  background-color: #e6e7e9;
-  color: #000000;
+  background-color: #212325;
 }
 
  .hero-banner {
@@ -85,7 +89,6 @@ section {
   justify-content: flex-end;
   align-items: flex-end;
   height: 250px;
-  border-bottom: 5px solid rgb(255, 255, 255);
   background-image: url("../images/02-hero-bg.jpg");
   background-size: cover;
   background-position: center;
@@ -94,13 +97,14 @@ section {
 
 .hero-banner h2 {
   background-color: #e6e7e9;
+  color: black;
   padding: 5px 15px 5px 200px;
 }
 
 .containerGrid {
   display: grid;
   grid-template-columns: 25% 75%;
-  background-color: #e6e7e9;
+  background-color: #212325;
 }
 
 .containerGrid section {
@@ -112,7 +116,7 @@ section {
 }
 
 .page-section {
-  border-right: 3px solid black;
+  border-right: 3px solid white;
   margin: 20px;
 }
 
@@ -142,7 +146,7 @@ section {
   background-image: url("../images/02-portfolio-1.jpg");
   background-size: cover;
   background-position: center;
-  border: 5px solid  #ffffff;
+  border: 5px solid #e6e7e9;
   display: flex;
   align-items: center;
   justify-content: flex-start;
@@ -151,8 +155,8 @@ section {
 
 #appCaption {
   padding: 5px;
-  color: rgb(0, 0, 0);
-  background-color:  #ffffff;
+  background-color: #e6e7e9;
+  color: black;
 }
 
 .secondApp {
@@ -160,7 +164,7 @@ section {
   background-image: url("../images/02-portfolio-2.jpg");
   background-size: cover;
   background-position: center;
-  border: 5px solid  #ffffff;
+  border: 5px solid #e6e7e9;
   display: flex;
   align-items: center;
   justify-content: flex-start;
@@ -171,7 +175,7 @@ section {
   background-image: url("../images/02-portfolio-3.jpg");
   background-size: cover;
   background-position: center;
-  border: 5px solid  #ffffff;
+  border: 5px solid #e6e7e9;
   display: flex;
   align-items: center;
   justify-content: flex-start;
@@ -182,7 +186,7 @@ section {
   background-image: url("../images/02-portfolio-4.jpg");
   background-size: cover;
   background-position: center;
-  border: 5px solid  #ffffff;
+  border: 5px solid #e6e7e9;
   display: flex;
   align-items: center;
   justify-content: flex-start;
@@ -193,7 +197,7 @@ section {
   background-image: url("../images/02-run-buddy.jpg");
   background-size: cover;
   background-position: center;
-  border: 5px solid  #ffffff;
+  border: 5px solid #e6e7e9;
   display: flex;
   align-items: center;
   justify-content: flex-start;
@@ -207,6 +211,10 @@ section {
 }
 
 .contactFlex h4 {
-  border-bottom: 3px solid black;
+  border-bottom: 3px solid white;
   font-weight: lighter;
+}
+
+.contactFlex a:hover {
+  border-bottom: 5px solid white;
 }
