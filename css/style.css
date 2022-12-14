@@ -2,11 +2,17 @@
   box-sizing: border-box;
 }
 
+:root {
+--dark: #212325;
+--light: #e6e7e9;
+--black: black;
+}
+
 body {
   margin: auto;
   font-family: 'Helvetica', 'Arial', 'sans-serif';
   line-height: 1.5;
-  color: white;
+  color: var(--light);
 }
 
 h1 {
@@ -26,22 +32,23 @@ h4 {
 }
 
 p {
-  font-size: 20px;
+  font-size: 18px;
 }
 
 header {
   padding: 20px;
-  background-color: #ffffff;
-  color: #ffffff;
-  border-bottom:5px solid black;
+  color: var(--light);
+  background-color: var(--light);
+  border-bottom:5px solid var(--black);
 }
 
 header h1 {
   display: inline-block;
   width: 50%;
   margin: auto;
-  background-color: rgb(0, 0, 0);
+  background-color: var(--black);
   padding: 10px 0px 10px 15px;
+  border-radius: 10px;
 }
 
 header nav {
@@ -63,11 +70,11 @@ header nav ul {
 header nav ul li {
   margin-left: 25px;
   display: inline-block;
-  border-bottom: 3px solid black;
+  border-bottom: 3px solid var(--black);
 }
 
 header nav ul li a:hover {
-  border-bottom: 5px solid black;
+  border-bottom: 5px solid var(--black);
 }
 
 a {
@@ -76,7 +83,7 @@ a {
 }
 
 a:hover {
-  border-bottom: 5px solid black;
+  border-bottom: 5px solid var(--black);
 }
 
 section {
@@ -95,16 +102,18 @@ section {
 }
 
 .hero-banner h2 {
-  background-color: #e6e7e9;
+  background-color: var(--light);
   color: black;
-  padding: 5px 15px 5px 200px;
+  padding: 5px 10px;
+  border-radius: 10px;
 }
 
 .containerGrid {
   display: grid;
+  padding: 20px;
   grid-template-columns: 25% 75%;
   grid-template-rows: 2fr 70% 1fr;
-  background-color: #212325;
+  background-color: var(--dark);
 }
 
 .containerGrid section {
@@ -116,7 +125,7 @@ section {
 }
 
 .page-section {
-  border-right: 3px solid white;
+  border-right: 3px solid var(--light);
   margin: 20px;
 }
 
@@ -129,13 +138,14 @@ section {
   background-image: url("../images/profile-picture.jpg");
   background-size: cover;
   background-position: center;
-  border: 3px solid #e6e7e9;
+  border: 3px solid var(--light);
+  border-radius: 10px;
   width: 100%;
   height: 100%;
 }
 
 .workGrid {
-  min-height: 800px;
+  min-height: 900px;
   gap: 0.5em;
   margin-bottom: 20px;
   
@@ -153,17 +163,24 @@ section {
   background-image: url("../images/02-portfolio-1.jpg");
   background-size: cover;
   background-position: center;
-  border: 3px solid #e6e7e9;
+  border: 3px solid var(--light);
+  border-radius: 10px;
   display: flex;
   align-items: center;
   justify-content: flex-start;
   cursor: pointer;
 }
 
+.mainApp:hover {
+  opacity: 0.5;
+}
+
 #appCaption {
   padding: 10px;
-  background-color: #e6e7e9;
-  color: black;
+  background-color: var(--light);
+  color: var(--black);
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
 }
 
 .secondApp {
@@ -171,10 +188,15 @@ section {
   background-image: url("../images/02-portfolio-2.jpg");
   background-size: cover;
   background-position: center;
-  border: 3px solid #e6e7e9;
+  border: 3px solid var(--light);
+  border-radius: 10px;
   display: flex;
   align-items: center;
   justify-content: flex-start;
+}
+
+.secondApp:hover {
+  opacity: 0.5;
 }
 
 .thirdApp {
@@ -182,10 +204,15 @@ section {
   background-image: url("../images/02-portfolio-3.jpg");
   background-size: cover;
   background-position: center;
-  border: 3px solid #e6e7e9;
+  border: 3px solid var(--light);
+  border-radius: 10px;
   display: flex;
   align-items: center;
   justify-content: flex-start;
+}
+
+.thirdApp:hover {
+  opacity: 0.5;
 }
 
 .fourthApp {
@@ -193,10 +220,15 @@ section {
   background-image: url("../images/02-portfolio-4.jpg");
   background-size: cover;
   background-position: center;
-  border: 3px solid #e6e7e9;
+  border: 3px solid var(--light);
+  border-radius: 10px;
   display: flex;
   align-items: center;
   justify-content: flex-start;
+}
+
+.fourthApp:hover {
+  opacity: 0.5;
 }
 
 .fifthApp {
@@ -204,10 +236,15 @@ section {
   background-image: url("../images/02-run-buddy.jpg");
   background-size: cover;
   background-position: center;
-  border: 3px solid #e6e7e9;
+  border: 3px solid var(--light);
+  border-radius: 10px;
   display: flex;
   align-items: center;
   justify-content: flex-start;
+}
+
+.fifthApp:hover {
+  opacity: 0.5;
 }
 
 .contactFlex {
@@ -218,10 +255,10 @@ section {
 }
 
 .contactFlex h4 {
-  border-bottom: 3px solid white;
+  border-bottom: 3px solid var(--light);
   font-weight: lighter;
 }
 
 .contactFlex a:hover {
-  border-bottom: 5px solid white;
+  border-bottom: 5px solid var(--light);
 }
