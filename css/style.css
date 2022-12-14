@@ -122,7 +122,7 @@ section {
 
 .aboutFlex {
   display: flex;
-  gap: 1em;
+  gap: 2em;
 }
 
 #profileImage {
@@ -161,7 +161,7 @@ section {
 }
 
 #appCaption {
-  padding: 5px;
+  padding: 10px;
   background-color: #e6e7e9;
   color: black;
 }
