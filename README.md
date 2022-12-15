@@ -10,6 +10,17 @@ The loaded page presents the portfolio with contact deails, about section with a
 The website has semantic HTML elements, and follows a logical structure independent of styling and positioning. The image and icon elements contain title images and alt text attributes and heading attributes fall in sequential order. The elements containt concise, descriptive titles. 
 
 
+## Screenshot
+
+images/Screenshot-portfolio-1.png
+images/Screenshot-portfolio-2.png
+
+## Links
+
+Solution URL - https://github.com/wmcgee1982/Portfolio.git
+Live URL - https://wmcgee1982.github.io/Portfolio/
+
+
 ## Installation
 
 N/A
