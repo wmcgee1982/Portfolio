@@ -46,7 +46,6 @@ header {
   padding: 0px 20px 20px 0px;
   color: var(--light);
   background-color: var(--light);
-  border-bottom:5px solid var(--black);
 }
 
 header h1 {
@@ -59,29 +58,28 @@ header h1 {
   box-shadow: 10px 10px lightblue;
 }
 
-header nav {
+nav {
   float: right;
   font-family: 'Helvetica', 'Arial', 'sans-serif';
   font-size: 20px;
-  margin-right: 10px;
   line-height: 1.5;
 }
 
-header nav a {
+nav a {
   color: var(--black);
 }
 
-header nav ul {
+nav ul {
   list-style-type: none;
 }
 
-header nav ul li {
+nav ul li {
   margin-left: 25px;
   display: inline-block;
   border-bottom: 3px solid var(--black);
 }
 
-header nav ul li a:hover {
+nav ul li a:hover {
   border-bottom: 5px solid var(--black);
 }
 
@@ -104,13 +102,15 @@ a:hover {
   background-image: url("../images/02-hero-bg.jpg");
   background-size: cover;
   background-position: center;
-  padding-right: 20px;
+  padding: 20px;
+  border-top:5px solid var(--black);
 }
 
 .hero-banner h2 {
   background-color: var(--light);
   color: var(--black);
-  padding: 5px 10px;
+  padding: 10px;
+  margin: 0px;
   border-radius:var(--borderRadius);
 }
 
@@ -134,7 +134,7 @@ a:hover {
 
 .page-section {
   border-right: 3px solid var(--light);
-  margin: 20px;
+  margin: 20px 0px;
 }
 
 /* about me  */
@@ -142,22 +142,25 @@ a:hover {
 .aboutFlex {
   display: flex;
   gap: 2em;
+  margin: 0px;
+  text-align: justify;
+}
+
+.aboutFlex p {
+  margin: 0px;
 }
 
 #profileImage {
-  background-image: url("../images/profile-picture.jpg");
-  background-size: cover;
-  background-position: center;
   border: 3px solid var(--light);
   border-radius:var(--borderRadius);
-  width: 100%;
-  height: 100%;
+  width: 200px;
+  height: 200px;
 }
 
 /* work portfolio  */
 
 .workGrid {
-  min-height: 900px;
+  min-height: 700px;
   gap: 0.5em;
   margin-bottom: 20px;
   
@@ -255,13 +258,95 @@ a:hover {
   flex-direction: row;
   justify-content: space-evenly;
   align-items: center;
+  gap: 0.5em;
+  flex-wrap: wrap;
 }
 
 .contactFlex h4 {
   border-bottom: 3px solid var(--light);
   font-weight: lighter;
+  margin: 0px;
 }
 
 .contactFlex a:hover {
   border-bottom: 5px solid var(--light);
+}
+
+/* media query for medium screens */
+@media screen and (max-width: 900px) {
+  header h1 {
+    width: 100%;
+    display: block;
+    margin: auto;
+    text-align: center;
+    padding: 10px 0px;
+    border-bottom-right-radius: 0px;
+    box-shadow: 0px 10px lightblue;
+    margin-bottom: 10px;
+  }
+
+  header {
+    padding: 0px;
+    border-bottom: none;
+    }
+
+  nav {
+    width: 100%;
+    display: block;
+    text-align: center;
+    background-color: var(--light);
+  }
+
+  nav ul {
+    padding-left: 0px;
+    display: block;
+  }
+
+  nav ul li {
+    margin: 0px 10px;
+  }
+
+  .aboutFlex {
+    flex-wrap: wrap;
+  }
+
+  .workGrid {
+    min-height: 700px;
+    grid-template-columns: 1fr;
+    grid-template-rows: 30%;
+    grid-template-areas: 
+    "mA"
+    "sA" "tA"
+    "fA" "fiA";
+  }
+
+  .containerGrid h2 {
+    float: left;
+    margin: 0px;
+  }
+}
+
+/* media query for smaller screens */
+@media screen and (max-width: 600px) {
+  .containerGrid {
+    grid-template-columns: 1fr;
+    grid-template-rows: 2fr;
+    background-color: var(--dark);
+  }
+  
+  .containerGrid h2 {
+    float: left;
+    margin: 0px;
+  }
+
+  .page-section {
+    border-left: 3px solid var(--light);
+    border-right: none;
+  }
+
+  nav ul li {
+    margin-left: 0px;
+    display: block;
+    border-bottom: none;
+  }
 }
